@@ -89,89 +89,70 @@ const Sidebar = () => {
                 <p>Report</p>
               </NavLink>
             </li>
-            <li className="has-treeview">
-              <NavLink to="/report" activeClassName="active">
-                <i className="icon-settings"></i>
-                <p>Settings <i className="right fa fa-angle-left"></i></p>
-              </NavLink>
-              {/* <ul className="nav nav-treeview">
-                <li>
-                  <NavLink to="/">
-                    <i className="fa fa-circle-o"></i>
-                    <p> My Profile</p>
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/">
-                    <i className="fa fa-circle-o"></i>
-                    <p>Business Settings</p>
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/">
-                    <i className="fa fa-circle-o"></i>
-                    <p>Application Settings</p>
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/">
-                    <i className="fa fa-circle-o"></i>
-                    <p>Roles &amp; Permissions</p>
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/">
-                    <i className="fa fa-circle-o"></i>
-                    <p>Language Settings</p>
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/">
-                    <i className="fa fa-circle-o"></i>
-                    <p>Footer NavLinks</p>
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/">
-                    <i className="fa fa-circle-o"></i>
-                    <p>Theme Settings</p>
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/">
-                    <i className="fa fa-circle-o"></i>
-                    <p>Email Settings</p>
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/">
-                    <i className="fa fa-circle-o"></i>
-                    <p>SMS Settings</p>
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/">
-                    <i className="fa fa-circle-o"></i>
-                    <p>NavLinkedin Settings</p>
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/">
-                    <i className="fa fa-circle-o"></i>
-                    <p>Update Application</p>
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/">
-                    <i className="fa fa-circle-o"></i>
-                    <p>Help</p>
-                  </NavLink>
-                </li>
-              </ul> */}
-            </li>
-            <li>MISCELLANEOUS</li>
             <li>
-              <NavLink to="/" activeClassName="active">
+              <div className="accordion accordion-flush" id="accordionFlushExample">
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="flush-headingOne">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <i className="fa fa-cog"></i>Settings
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" className="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <NavLink to="/myprofile" activeClassName="active">
+                      <i className="fa fa-circle-o"></i>
+                      <p> My Profile</p>
+                    </NavLink>
+                    <NavLink to="/businesssettings" activeClassName="active">
+                      <i className="fa fa-circle-o"></i>
+                      <p> Business Settings</p>
+                    </NavLink>
+                    <NavLink to="/applicationsettings" activeClassName="active">
+                      <i className="fa fa-circle-o"></i>
+                      <p> Application Settings</p>
+                    </NavLink>
+                    <NavLink to="/rolespermissions" activeClassName="active">
+                      <i className="fa fa-circle-o"></i>
+                      <p> Roles &amp; Permissions</p>
+                    </NavLink>
+                    <NavLink to="/languagesettings" activeClassName="active">
+                      <i className="fa fa-circle-o"></i>
+                      <p> Language Settings</p>
+                    </NavLink>
+                    <NavLink to="/footernavlinks" activeClassName="active">
+                      <i className="fa fa-circle-o"></i>
+                      <p> Footer NavLinks</p>
+                    </NavLink>
+                    <NavLink to="/themesettings" activeClassName="active">
+                      <i className="fa fa-circle-o"></i>
+                      <p> Theme Settings</p>
+                    </NavLink>
+                    <NavLink to="/emailsettings" activeClassName="active">
+                      <i className="fa fa-circle-o"></i>
+                      <p> Email Settings</p>
+                    </NavLink>
+                    <NavLink to="/smssettings" activeClassName="active">
+                      <i className="fa fa-circle-o"></i>
+                      <p> SMS Settings</p>
+                    </NavLink>
+                    <NavLink to="/navlinkedinsettings" activeClassName="active">
+                      <i className="fa fa-circle-o"></i>
+                      <p> Nav Linkedin Settings</p>
+                    </NavLink>
+                    <NavLink to="/updateapplication" activeClassName="active">
+                      <i className="fa fa-circle-o"></i>
+                      <p> Update Application</p>
+                    </NavLink>
+                    <NavLink to="/help" activeClassName="active">
+                      <i className="fa fa-circle-o"></i>
+                      <p> Help</p>
+                    </NavLink>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li className="nav-heading">MISCELLANEOUS</li>
+            <li>
+              <NavLink to="/frontwebsite" activeClassName="active">
                 <i className="fa fa-external-Navlink"></i>
                 <p>Front Website</p>
               </NavLink>

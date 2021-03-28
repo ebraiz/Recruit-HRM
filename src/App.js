@@ -20,6 +20,19 @@ import Report from './components/pages/Report';
 import Skills from './components/pages/Skills';
 import Team from './components/pages/Team';
 import Todos from './components/pages/Todos';
+import MyProfile from './components/pages/MyProfile';
+import BusinessSettings from './components/pages/BusinessSettings';
+import ApplicationSettings from './components/pages/ApplicationSettings';
+import RolesPermissions from './components/pages/RolesPermissions';
+import LanguageSettings from './components/pages/LanguageSettings';
+import FooterNavLinks from './components/pages/FooterNavLinks';
+import ThemeSettings from './components/pages/ThemeSettings';
+import EmailSettings from './components/pages/EmailSettings';
+import SMSSettings from './components/pages/SMSSettings';
+import NavLinkedinSettings from './components/pages/NavLinkedinSettings';
+import UpdateApplication from './components/pages/UpdateApplication';
+import Help from './components/pages/Help';
+import FrontWebsite from './components/pages/FrontWebsite';
 
 const App = () => {
   return (
@@ -42,6 +55,19 @@ const App = () => {
           <Route path="/skills" component={Skills} />
           <Route path="/team" component={Team} />
           <Route path="/todos" component={Todos} />
+          <Route path="/myprofile" component={MyProfile} />
+          <Route path="/businesssettings" component={BusinessSettings} />
+          <Route path="/applicationsettings" component={ApplicationSettings} />
+          <Route path="/rolespermissions" component={RolesPermissions} />
+          <Route path="/languagesettings" component={LanguageSettings} />
+          <Route path="/footernavlinks" component={FooterNavLinks} />
+          <Route path="/themesettings" component={ThemeSettings} />
+          <Route path="/emailsettings" component={EmailSettings} />
+          <Route path="/smssettings" component={SMSSettings} />
+          <Route path="/navlinkedinsettings" component={NavLinkedinSettings} />
+          <Route path="/updateapplication" component={UpdateApplication} />
+          <Route path="/help" component={Help} />
+          <Route path="/frontwebsite" component={FrontWebsite} />
           <Redirect to="/" />
         </Switch>
  
