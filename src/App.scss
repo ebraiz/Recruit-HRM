@@ -27,6 +27,12 @@ $light-grey: #f4f6f9;
   grid-row: 2 / 3;
   background: $light-grey; 
   padding: 0.5rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  & .dashboardGraph{
+    padding: 20px;
+  }
 }
 
 .footerSection { 
