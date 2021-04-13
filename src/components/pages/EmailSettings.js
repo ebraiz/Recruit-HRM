@@ -1,10 +1,10 @@
 import React from "react";
-import MainContent from "../layouts/MainContent";
+import MainHeading from "../layouts/MainHeading";
 
 const EmailSettings = () => {
   return (
     <>
-        <MainContent heading="Email Settings" />
+        <MainHeading heading="Email Settings" />
     </>
   );
 }

@@ -1,10 +1,10 @@
 import React from "react";
-import MainContent from "../layouts/MainContent";
+import MainHeading from "../layouts/MainHeading";
 
 const CandidateDatabase = () => {
   return (
     <>
-        <MainContent heading="Candidate Database" /> 
+        <MainHeading heading="Candidate Database" /> 
     </>
   );
 }

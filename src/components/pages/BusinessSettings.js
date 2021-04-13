@@ -1,10 +1,10 @@
 import React from "react";
-import MainContent from "../layouts/MainContent";
+import MainHeading from "../layouts/MainHeading";
 
 const  BusinessSettings = () => {
   return (
     <>
-        <MainContent heading="Business Settings" /> 
+        <MainHeading heading="Business Settings" /> 
     </>
   );
 }

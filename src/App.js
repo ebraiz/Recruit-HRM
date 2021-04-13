@@ -5,7 +5,6 @@ import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
 import {Switch, Route, Redirect} from 'react-router-dom';
 import Header from './components/layouts/Header';
 import Sidebar from './components/layouts/Sidebar';
-import MainContent from './components/layouts/MainContent';
 import Footer from './components/layouts/Footer';
 import Dashboard from './components/pages/Dashboard';
 import JobCategories from './components/pages/JobCategories';
@@ -40,37 +39,39 @@ const App = () => {
       <div className="mainContainer">
         <Header />
         <Sidebar />
-        <MainContent />
-        <Switch>
-          <Route exact path="/" component={Dashboard} />
-          <Route path="/candidatedatabase" component={CandidateDatabase} />
-          <Route path="/companies" component={Companies} />
-          <Route path="/interviewschedule" component={InterviewSchedule} />
-          <Route path="/jobapplications" component={JobApplications} />
-          <Route path="/jobcategories" component={JobCategories} />
-          <Route path="/joblocations" component={JobLocations} />
-          <Route path="/jobonboard" component={JobOnBoard} />
-          <Route path="/jobs" component={Jobs} />
-          <Route path="/report" component={Report} />
-          <Route path="/skills" component={Skills} />
-          <Route path="/team" component={Team} />
-          <Route path="/todos" component={Todos} />
-          <Route path="/myprofile" component={MyProfile} />
-          <Route path="/businesssettings" component={BusinessSettings} />
-          <Route path="/applicationsettings" component={ApplicationSettings} />
-          <Route path="/rolespermissions" component={RolesPermissions} />
-          <Route path="/languagesettings" component={LanguageSettings} />
-          <Route path="/footernavlinks" component={FooterNavLinks} />
-          <Route path="/themesettings" component={ThemeSettings} />
-          <Route path="/emailsettings" component={EmailSettings} />
-          <Route path="/smssettings" component={SMSSettings} />
-          <Route path="/navlinkedinsettings" component={NavLinkedinSettings} />
-          <Route path="/updateapplication" component={UpdateApplication} />
-          <Route path="/help" component={Help} />
-          <Route path="/frontwebsite" component={FrontWebsite} />
-          <Redirect to="/" />
-        </Switch>
- 
+
+        <div className="mainSection">
+          <Switch>
+            <Route exact path="/" component={Dashboard} />
+            <Route path="/candidatedatabase" component={CandidateDatabase} />
+            <Route path="/companies" component={Companies} />
+            <Route path="/interviewschedule" component={InterviewSchedule} />
+            <Route path="/jobapplications" component={JobApplications} />
+            <Route path="/jobcategories" component={JobCategories} />
+            <Route path="/joblocations" component={JobLocations} />
+            <Route path="/jobonboard" component={JobOnBoard} />
+            <Route path="/jobs" component={Jobs} />
+            <Route path="/report" component={Report} />
+            <Route path="/skills" component={Skills} />
+            <Route path="/team" component={Team} />
+            <Route path="/todos" component={Todos} />
+            <Route path="/myprofile" component={MyProfile} />
+            <Route path="/businesssettings" component={BusinessSettings} />
+            <Route path="/applicationsettings" component={ApplicationSettings} />
+            <Route path="/rolespermissions" component={RolesPermissions} />
+            <Route path="/languagesettings" component={LanguageSettings} />
+            <Route path="/footernavlinks" component={FooterNavLinks} />
+            <Route path="/themesettings" component={ThemeSettings} />
+            <Route path="/emailsettings" component={EmailSettings} />
+            <Route path="/smssettings" component={SMSSettings} />
+            <Route path="/navlinkedinsettings" component={NavLinkedinSettings} />
+            <Route path="/updateapplication" component={UpdateApplication} />
+            <Route path="/help" component={Help} />
+            <Route path="/frontwebsite" component={FrontWebsite} />
+            <Redirect to="/" />
+          </Switch>
+        </div>
+
         <Footer />
       </div>
     </>

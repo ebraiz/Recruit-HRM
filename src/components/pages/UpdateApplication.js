@@ -1,10 +1,10 @@
 import React from "react";
-import MainContent from "../layouts/MainContent";
+import MainHeading from "../layouts/MainHeading";
 
 const UpdateApplication = () => {
   return (
     <>
-        <MainContent heading="Update Application" />
+        <MainHeading heading="Update Application" />
     </>
   );
 }

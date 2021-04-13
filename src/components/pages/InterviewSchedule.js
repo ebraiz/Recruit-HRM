@@ -1,10 +1,10 @@
 import React from "react";
-import MainContent from "../layouts/MainContent";
+import MainHeading from "../layouts/MainHeading";
 
 const InterviewSchedule = () => {
   return (
     <>
-        <MainContent heading="Interview Schedule" /> 
+        <MainHeading heading="Interview Schedule" /> 
     </>
   );
 }

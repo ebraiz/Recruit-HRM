@@ -1,10 +1,10 @@
 import React from "react";
-import MainContent from "../layouts/MainContent";
+import MainHeading from "../layouts/MainHeading";
 
 const JobOnBoard = () => {
   return (
     <>
-        <MainContent heading="Job OnBoard" /> 
+        <MainHeading heading="Job OnBoard" /> 
     </>
   );
 }

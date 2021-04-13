@@ -1,10 +1,10 @@
 import React from "react";
-import MainContent from "../layouts/MainContent";
+import MainHeading from "../layouts/MainHeading";
 
 const  RolesPermissions = () => {
   return (
     <>
-        <MainContent heading="Roles &amp; Permissions" /> 
+        <MainHeading heading="Roles &amp; Permissions" /> 
     </>
   );
 }

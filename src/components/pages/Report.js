@@ -1,10 +1,10 @@
 import React from "react";
-import MainContent from "../layouts/MainContent";
+import MainHeading from "../layouts/MainHeading";
 
 const Report = () => {
   return (
     <>
-        <MainContent heading="Report" /> 
+        <MainHeading heading="Report" /> 
     </>
   );
 }

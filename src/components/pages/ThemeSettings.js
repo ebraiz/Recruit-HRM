@@ -1,10 +1,10 @@
 import React from "react";
-import MainContent from "../layouts/MainContent";
+import MainHeading from "../layouts/MainHeading";
 
 const ThemeSettings = () => {
   return (
     <>
-        <MainContent heading="Theme Settings" /> 
+        <MainHeading heading="Theme Settings" /> 
     </>
   );
 }

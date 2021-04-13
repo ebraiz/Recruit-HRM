@@ -1,10 +1,10 @@
 import React from "react";
-import MainContent from "../layouts/MainContent";
+import MainHeading from "../layouts/MainHeading";
 
 const LanguageSettings = () => {
   return (
     <>
-        <MainContent heading="Language Settings" /> 
+        <MainHeading heading="Language Settings" /> 
     </>
   );
 }

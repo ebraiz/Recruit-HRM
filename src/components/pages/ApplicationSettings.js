@@ -1,10 +1,10 @@
 import React from "react";
-import MainContent from "../layouts/MainContent";
+import MainHeading from "../layouts/MainHeading";
 
 const ApplicationSettings = () => {
   return (
     <>
-        <MainContent heading="Application Settings" /> 
+        <MainHeading heading="Application Settings" /> 
     </>
   );
 }

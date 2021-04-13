@@ -1,10 +1,10 @@
 import React from "react";
-import MainContent from "../layouts/MainContent";
+import MainHeading from "../layouts/MainHeading";
 
 const SMSSettings = () => {
   return (
     <>
-        <MainContent heading="SMS Settings" />
+        <MainHeading heading="SMS Settings" />
     </>
   );
 }
